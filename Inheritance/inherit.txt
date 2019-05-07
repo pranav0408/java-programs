@@ -1,0 +1,36 @@
+A final class cannot be inherit.
+
+Method Overriding: ->
+------------------
+It suppports dynamic binding.
+Also called runtime polymorphism
+The scope of overridden method cannot be reduced. e.g. from default to private but default to protected is allowed.
+
+Method Hiding: ->
+--------------
+Redefining static method of parent class in child class.
+Static methods are iherited.
+It is actually overriding and all the rules of overriding are followed.
+But it is called method hiding due to certain resons.
+    There is no dynamic binding or runtime polymorphism rather compile-time binding. It will be called based upon reference.
+    Or, the child class method is hidden by parent class.
+
+@override: ->
+----------
+Annotation. Checks the overridden method at the compile time if it doesn't matches the definition.
+A final method cannot be overridden.
+
+This: ->
+-----
+: Used as constructor chaining where 'this' should be the first statement.
+: Used to resolve local variables within multiple objects.
+
+--> A cycle between constructors due to this() throws an error: Recursive Constructor Invocation.
+
+Singleton class: ->
+----------------
+A class which cannot be inherited and at most only one object is created.
+This is possible by making the constructor private.
+To receive the object of such class we need a static method in it.
+
+--> Static method has a priviledge to be called by both object and class name.

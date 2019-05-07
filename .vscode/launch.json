@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - moreEnum",
+            "request": "launch",
+            "mainClass": "moreEnum"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - IOtry",
+            "request": "launch",
+            "mainClass": "IOtry"
+        }
+    ]
+}

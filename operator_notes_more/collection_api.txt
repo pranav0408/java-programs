@@ -1,0 +1,30 @@
+=========================================================>
+We will use Vector only when we need syncronization.
+Else we will use ArrayList
+Collection is an interface
+=========================================================>
+->ArrayList provides dynamic array
+
+->Conversion of variables to object automatically is called autoboxing.
+  And reverse when done if required is called unboxing.
+
+
+================
+    ArrayList      
+================
+
+-> One constructor to pass the capacity 
+    import java.util.*;
+    default capacity is 10 theoretically
+    else give the capacity explicitly
+    
+    But also in default case, if we access the index more than the elements present in the array then it will throw an errer.
+    eg, elements are 4 and we access index 6 to insert
+    Since, we have only sequential access
+
+-> One collection to pass the collection.
+
+-> Type inference "< >" is used to say the type of ArrayList
+    ArrayList all = new ArrayList();
+    ArrayList <double> all = new ArrayList<>();
+

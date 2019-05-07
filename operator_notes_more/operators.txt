@@ -1,0 +1,8 @@
+Bitwise Shift
+=================================
+
+>>  --> right shift (signed right shift)
+>>> --> right shift zero fill (unsigned right shift)
+
+(Number/ 2^bits)
+

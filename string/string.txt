@@ -1,0 +1,52 @@
+Three classes:
+String
+StringBuffer
+StringBuilder
+
+=====================
+equals() method in object is used to compare hash code
+but // in string class it is overridden to compare content
+=====================
+
+=====================
+'==' compares addresses
+equals()method compares content
+
+String s1 = "hello";
+String s2 = new String("hello");
+String s3 = "hello";  // intern string: creates a reference to the already present "hello" in memory pool
+
+s1 == s2 is False
+s1.equals(s2) is True
+=====================
+
+Methods: =>
+------------
+length()
+concat()
+substring() //it is exclusive
+
+Character Extraction: =>
+------------------------
+charAt()
+char[] toCharArray()
+getChars( <from index>, <to index>, <reference to char[] index>, <offset from which index to copy> ) //it is exclusive
+
+String modification: =>
+-----------------------
+substring()
+replace()
+split( <delimiter>, <integer upper limit> )
+// in split() passing <0 will aplly split as many times as possible
+// but passing =0 will apply split as many times as possible also trailing empty string will be removed
+
+StringBuilder: =>
+-----------------
+StringBuilder() : default lenght 16
+StringBuilder(int len): length of len size
+StringBuilder(String s): length of size of string + 16
+append()
+
+"Hello" + A + B + "world" ~ (sb("hello").append(A).append(B).append("world") ).toString();
+
+while appending, if values is accomodated in 2n+2 then it resizes to 2n+2 else it returns the size of max.

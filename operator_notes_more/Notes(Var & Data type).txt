@@ -1,0 +1,63 @@
+Variables and Data Type
+	
+	byte  - 8bit
+	short - 16bit
+	int   - 32bit
+	long  - 64bit
+
+	float - 32bit
+	double- 64bit
+
+	char - 16 bit
+
+	boolean -
+
+NOTE :
+
+ All the numbers are int by default and all the floating point numbers are double by default.
+
+
+ Assigning a lower precision number to higher precision number is widening.(Automatically done)
+ Assingning a higher precision number to lower precision num is narrowing.(Explicit coversion is required)
+
+				=================================> widening
+				 byte short int long float double	
+     Narrowing <=================================
+
+A class is a template for creating an object.
+An object is an instance of a class.
+
+Memory Allocation in java is done by JVM.
+Three memory areas :
+1> Heap - all the objects are stored
+2> Stack - all the local variables are stored
+3> Class area - class members    
+
+At most one public class in one java file.
+
+.class file in java is called byte code. It is the thing that makes java platform independent and brings security.
+
+All object references and variable in java is assigned a null value and no garbage value.
+
+Variables inside the body of a class is called instance variable. As soon as an object is created, its own copy of instance variables will be created.
+
+A variable qualified with static keyword inside the body of a class is called class variable. It has default value and is stored in class area.
+
+Local variables are those which are created inside any block of a class. Eg: Block of constructor, method, loop, if-else, etc. No access specifier and static is allowed with local variables.
+
+----------------------------------
+Default Values:
+	
+	Boolean: false
+
+	char   : null
+
+	byte   : 0
+	short  : 0
+	int    : 0
+	long   : 0
+
+	float  : 0.0
+	double : 0.0
+----------------------------------
+
